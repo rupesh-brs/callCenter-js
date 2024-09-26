@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Call-Center</title>
+</head>
+<body>
+
+<div class="main-container">    
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Call Center</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>    
+        </ul>
+      </div> -->
+    </div>
+  </nav>
+      <div class = "container-fluid">
+           <div class = "row">
+                <div class = "col-2" id="side">
+                   <ul>
+                    <li><a href="index.html">DashBoard</a></li>
+                    <li><a href="Service.html">Service Requests</a></li>
+                   </ul>
+                </div>
+                <div class="col-10 main mt-3" > 
+                    <div class="container-fluid mt-5">
+                        <div class="row">
+                            <h2>DashBoard</h2>
+                            <p>Data Analytics and Report Visualization</p>
+                            <div class="col-3">
+                                <div class="card bg-primary">
+                                    <div class="card-header"><h4>Service Requests Approved</h4></div>
+                                    <div class="card-body"><p>12</p></div>
+                                </div>
+                            </div>
+                            <div class="col-3 ">
+                                <div class="card bg-warning">
+                                    <div class="card-header">
+                                        <h4>Service Requests <br>Open</h4>
+                                    </div>
+                                    <div class="card-body"><p>10</p></div>
+                                </div>
+                            </div>
+                            <div class="col-3 ">
+                                <div class="card bg-success">
+                                    <div class="card-header">
+                                        <h4>Service Requests Assigned</h4>
+                                    </div>
+                                    <div class="card-body"><p>9</p></div>
+                                </div>
+                            </div>
+                            <div class="col-3 ">
+                                <div class="card bg-danger">
+                                    <div class="card-header">
+                                        <h4>Service Requests Pending</h4>
+                                    </div>
+                                    <div class="card-body"><p>20</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- graphs starts here. -->
+                    <div class="container-fluid mt-5 mb-5">
+                        <div class="row">
+                            <div class="col-6">
+                                <!-- Heading for Area Chart -->
+                                    <h5>Data Service Request</h5>
+                                    <!-- Canvas for Area Chart -->
+                                    <canvas id="areaChart" width="400" height="200"></canvas>
+                            </div>
+                            <div class="col-6">
+                                <!-- Heading for Bar Graph -->
+                                <h5>Monthly Service Requests</h5>
+                                <!-- Canvas for Bar Chart -->
+                                <canvas id="barChart" width="400" height="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!--Word Cloud - Our customers around the world-->
+                    <div class = "customers-container gray-border">
+                        <h4 class="gray-background">Word Cloud - Our customers around the world</h4>
+                        <iframe src="wordCloud.html" width="100%" height="400" frameborder="0"></iframe>
+                    </div>    
+                </div>
+           </div>
+      </div>
+</div> 
+    <script src="assets/scripts/app.js"></script>
+</body>
+</html>
