@@ -1,0 +1,28 @@
+body {
+    margin: 20px;
+}
+.workflow-step {
+    border-left: 4px solid #0d6efd;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.workflow-step.completed {
+    border-color: #198754; /* Bootstrap success color */
+}
+.workflow-step.active {
+    border-color: #ffc107; /* Bootstrap warning color */
+}
+.workflow-step .step-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+.step-status.completed {
+    background-color: #198754;
+    color: white;
+}
+.step-status.active {
+    background-color: #ffc107;
+    color: black;
+}

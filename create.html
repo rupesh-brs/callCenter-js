@@ -20,11 +20,29 @@
             color: green;
             font-size: 1em;
         }
+        #side{
+            height:100%;
+            position:fixed;
+            background-color: black;
+            color: white;
+            font-weight: 500;
+            padding-top: 100px;   
+        }
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Call Center</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      
 
-    <div class="container">
+    <div class="container mt-5 px-5">
+        <br>
         <h2 class="mb-4">Complaint Registration Form</h2>
         
         <form id="complaintForm" novalidate>

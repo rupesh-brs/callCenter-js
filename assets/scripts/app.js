@@ -53,3 +53,29 @@ const areaChart = new Chart(areaCtx, {
      }
    }
  });
+
+
+ //workflow js
+//  <!-- JavaScript for Dynamic Interaction -->
+
+    //  let currentStep = 1;
+
+    //  function completeStep(stepNumber) {
+    //      const step = document.getElementById(`step${stepNumber}`);
+    //      const nextStep = document.getElementById(`step${stepNumber + 1}`);
+         
+    //      // Mark current step as completed
+    //      step.classList.add('completed');
+    //      step.querySelector('.step-status').classList.remove('active');
+    //      step.querySelector('.step-status').classList.add('completed');
+    //      step.querySelector('.step-status').innerText = 'Completed';
+         
+    //      // If there is a next step, activate it
+    //      if (nextStep) {
+    //          nextStep.classList.add('active');
+    //          nextStep.querySelector('.step-status').classList.add('active');
+    //          nextStep.querySelector('.step-status').innerText = 'Active';
+    //      }
+
+    //      currentStep++;
+    //  }
